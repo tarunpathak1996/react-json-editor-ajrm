@@ -1100,7 +1100,7 @@ class JSONInput extends Component {
                                 found = followsSymbol(i,['}',']']);
                                 if(found){
                                     setError(i,format(locale.invalidToken.tokenSequence.prohibited, {
-                                        firstToken: buffer.tokens_merge[found].string,
+                                        firstToken: buffer.tokens_merge[found]?.string,
                                         secondToken: string
                                     }));
                                     break;
